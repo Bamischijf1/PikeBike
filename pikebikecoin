@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikeBikeCoin (PBC) - Ride the Tide!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef);
+            color: #fff;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef); }
+            100% { background: linear-gradient(to bottom, #90e0ef, #00b4d8, #0077b6); }
+        }
+
+        header {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            border: 2px solid #00b4d8;
+            border-radius: 10px;
+            padding: 1.5rem;
+            max-width: 300px;
+            background: rgba(0, 116, 179, 0.8);
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        button {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #0096c7;
+            transform: scale(1.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: url('https://example.com/pike-bike.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .floating-pike {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: float 5s infinite alternate;
+        }
+
+        @keyframes float {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -45%) rotate(15deg); }
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-10deg); }
+            50% { transform: rotate(10deg); }
+        }
+
+        img:hover {
+            animation: wiggle 0.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PikeBikeCoin (PBC)</h1>
+        <p>Ride the tide, pedal to the moon!</p>
+    </header>
+
+    <div class="hero">
+        <h1>Join the Ride</h1>
+        <p>From rivers to the moon, PikeBikeCoin is your ultimate memecoin adventure!</p>
+        <button onclick="alert('Welcome to the PikeBikeCoin community!')">Buy PBC Now</button>
+    </div>
+
+    <div class="container">
+        <h2>Why Choose PikeBikeCoin?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>🐟 Unique Concept</h3>
+                <p>A pike on a bike? Nothing rides waves like this legendary memecoin!</p>
+            </div>
+            <div class="feature">
+                <h3>🚴 Community Driven</h3>
+                <p>Powered by a passionate and fun-loving crypto community.</p>
+            </div>
+            <div class="feature">
+                <h3>🌊 Rewards</h3>
+                <p>HODL PBC to earn exclusive rewards and participate in NFT drops.</p>
+            </div>
+        </div>
+        <button onclick="location.href='#roadmap'">Explore Our Roadmap</button>
+    </div>
+
+    <div id="roadmap" class="container">
+        <h2>Our Roadmap</h2>
+        <ul>
+            <li><strong>Phase 1:</strong> Launch the token and build the community.</li>
+            <li><strong>Phase 2:</strong> Exclusive NFT collections featuring the pike on epic bike rides.</li>
+            <li><strong>Phase 3:</strong> Partnerships and integrations with top platforms.</li>
+            <li><strong>Phase 4:</strong> Pedal all the way to the moon!</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 PikeBikeCoin. All rights reserved.</p>
+        <p>Follow us on <a href="#" style="color: #00b4d8; text-decoration: none;">Twitter</a> | <a href="#" style="color: #00b4d8; text-decoration: none;">Discord</a> | <a href="#" style="color: #00b4d8; text-decoration: none;">Reddit</a></p>
+    </footer>
+
+    <img class="floating-pike" src="https://example.com/floating-pike.png" alt="Pike on a Bike" width="200">
+</body>
+</html>
